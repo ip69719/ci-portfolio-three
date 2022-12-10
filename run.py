@@ -15,3 +15,24 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('elegant_hairstyles')
 
+users = SHEET.worksheet('users')
+
+
+def login():
+    """
+    The function allows an existing user to login. Checks if user email
+    matches to the record stored in the users worksheet.
+    """
+    email_input = input("\nPlease enter your email: ")
+    print("Thank you. Please wait while we retrieve your details...")
+
+    # Check if username exists
+    existing_user = users.find(email_input)
+    
+    if existing_user:
+        print('user found')
+    else:
+        print('user not found')
+
+
+login()
