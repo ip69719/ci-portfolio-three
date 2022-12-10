@@ -34,6 +34,12 @@ def login():
 
     # Check if username exists
     existing_user = users.find(email_input, in_column=2)
+    # Get row number in which username is found
+    row_user = existing_user.row
+    # Get existing user details
+    user_details = users.row_values(row_user)
+    print(user_details[2])
+
     if existing_user:
         print('user found')
     else:
