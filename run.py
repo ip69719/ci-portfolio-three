@@ -33,8 +33,7 @@ def login():
     print("Thank you. Please wait while we retrieve your details...")
 
     # Check if username exists
-    existing_user = users.find(email_input)
-
+    existing_user = users.find(email_input, in_column=2)
     if existing_user:
         print('user found')
     else:
