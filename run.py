@@ -80,3 +80,19 @@ def validate_date(date_str):
 
 
 get_date()
+
+
+def login_register():
+    """
+    Function to check if User wants to Log In or Register.
+    Checks if User input is a valid answer option.
+    """
+    print("Are you a returning Customer?\n")
+    print("1 - Yes, I am a returning Customer and I want to Log In.")
+    print("2 - No, I am a new Customer and I want to Register.")
+    answer = input("Enter your answer option here: ").strip()
+    print(answer)
+    return answer
+
+
+login_register()
