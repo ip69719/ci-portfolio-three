@@ -1,6 +1,9 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
+
+import sys # used for allowing user to exit the program
+
 """
 Import datetime and date classes from datetime module
 required to manipulate dates.
@@ -123,7 +126,7 @@ def main():
     if answer == "1":
         login_register()
     elif answer == "2":
-        print("Exit")
+        sys.exit("Thank you for using our booking system!")
 
 
 main()
