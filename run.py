@@ -57,9 +57,11 @@ def login():
             get_date()
         else:
             print("Incorrect Username and Password combination\n")
+            login()
     else:
         # username doesn't exist
         print("Incorrect Username and Password combination\n")
+        login()
 
 
 def get_date():
