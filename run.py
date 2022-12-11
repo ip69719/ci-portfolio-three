@@ -89,6 +89,22 @@ def validate_date(date_str):
 get_date()
 
 
+# Code to help standardise user input written by my Mentor
+def check_user_answer():
+    """
+    Helper function to check if user answer is valid.
+    The loop will repeatedly request user to re-enter answer option,
+    until a valid answer is provided.
+
+    """
+    answer = input("Enter your answer option here:\n").strip()
+    while answer not in ("1", "2"):
+        print("\nYou have entered an invalid value.")
+        print("Please enter '1' or '2' to select your answer.")
+        answer = input("Enter your answer option here:").strip()
+    return answer
+
+
 def login_register():
     """
     Function to check if User wants to Log In or Register.
@@ -116,7 +132,7 @@ def main():
     print("1 - Log In or Register for a free account.")
     print("2 - Exit the booking system.")
 
-    answer = input("Enter your answer option here: \n").strip()
+    answer = check_user_answer()
 
     if answer == "1":
         login_register()
