@@ -54,6 +54,7 @@ def login():
         username_password_input = input("Please enter your password: \n")
         if username_password_input == user_details[2]:
             print(f"Welcome back, {existing_user.value}!")
+            get_date()
         else:
             print("Incorrect Username and Password combination\n")
     else:
@@ -84,9 +85,6 @@ def validate_date(date_str):
             raise ValueError()
     except ValueError:
         print("Invalid data: Date should be in YYYY-MM-DD format, please try again.\n")
-
-
-get_date()
 
 
 # Code to help standardise user input written by my Mentor
