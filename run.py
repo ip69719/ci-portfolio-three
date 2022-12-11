@@ -101,7 +101,11 @@ def login_register():
     print("1 - Yes, I am a returning Customer and I want to Log In.")
     print("2 - No, I am a new Customer and I want to Register.")
     answer = input("Enter your answer option here: \n").strip()
-    print(answer)
+    # repeat request for answer option until input provided is valid
+    while answer not in ("1", "2"):
+        print("You have entered an invalid value.")
+        print("Please enter '1' or '2' to select your answer.\n")
+        answer = input("Enter your answer option here: \n").strip()
     return answer
 
 
