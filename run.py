@@ -1,19 +1,14 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
-
-import sys # used for allowing user to exit the program
-
 """
-Import datetime and date classes from datetime module
-required to manipulate dates.
+Imports to support application
 """
-from datetime import datetime
+
+import sys  # used for allowing user to exit the program
+from datetime import datetime  # required to manipulate dates
 
 import gspread
 from google.oauth2.service_account import Credentials
-# pyfiglet module used to create logo for the app
-import pyfiglet
+
+import pyfiglet  # module used to create logo for the app
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
