@@ -34,16 +34,21 @@ def login():
 
     # Check if username exists
     existing_user = users.find(email_input, in_column=2)
-    # Get row number in which username is found
-    row_user = existing_user.row
-    # Get existing user details
-    user_details = users.row_values(row_user)
-    print(user_details[2])
 
     if existing_user:
-        print('user found')
+        # Get row number in which username is found
+        row_user = existing_user.row
+        # Get existing user details
+        user_details = users.row_values(row_user)
+        # check password
+        username_password_input = input("\nPlease enter your password: ")
+        if username_password_input == user_details[2]:
+            print(f"Welcome back, {existing_user.value}!")
+        else:
+            print("Incorrect Username and Password combination\n")
     else:
-        print('user not found')
+        # username doesn't exist
+        print("Incorrect Username and Password combination\n")
 
 
 login()
