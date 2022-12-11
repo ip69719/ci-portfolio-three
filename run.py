@@ -108,9 +108,6 @@ def login_register():
     return answer
 
 
-login_register()
-
-
 def main():
     """
     Displays welcome message and a menu containing two options to choose from.
@@ -120,6 +117,13 @@ def main():
     print("\nPlease select from the following options by entering 1 or 2.\n")
     print("1 - Log In or Register for a free account.")
     print("2 - Exit the booking system.")
+
+    answer = input("Enter your answer option here: \n").strip()
+
+    if answer == "1":
+        login_register()
+    elif answer == "2":
+        print("Exit")
 
 
 main()
