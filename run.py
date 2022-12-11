@@ -115,6 +115,10 @@ def login_register():
     print("2 - No, I am a new Customer and I want to Register.")
 
     answer = check_user_answer()
+    if answer == "1":
+        login()
+    elif answer == "2":
+        print("Register")
 
 
 def main():
