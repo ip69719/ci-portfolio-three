@@ -36,9 +36,6 @@ def welcome_message():
     print("================================================================================")
 
 
-welcome_message()
-
-
 def login():
     """
     The function allows an existing user to login. Checks if user email
@@ -112,3 +109,17 @@ def login_register():
 
 
 login_register()
+
+
+def main():
+    """
+    Displays welcome message and a menu containing two options to choose from.
+    """
+    welcome_message()
+
+    print("\nPlease select from the following options by entering 1 or 2.\n")
+    print("1 - Log In or Register for a free account.")
+    print("2 - Exit the booking system.")
+
+
+main()
