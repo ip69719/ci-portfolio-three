@@ -9,6 +9,8 @@ from datetime import datetime
 
 import gspread
 from google.oauth2.service_account import Credentials
+# pyfiglet module used to create logo for the app
+import pyfiglet
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -28,7 +30,10 @@ def welcome_message():
     """
     Welcome message
     """
-    print("Hello and welcome to Elegant Hairstyles appointment booking system!\n")
+    logo = pyfiglet.figlet_format("     E l e g a n t\n           H a i r s t y l e s")
+    print(logo)
+    print("       Hello and welcome to Elegant Hairstyles appointment booking system!\n")
+    print("================================================================================")
 
 
 welcome_message()
@@ -59,9 +64,6 @@ def login():
     else:
         # username doesn't exist
         print("Incorrect Username and Password combination\n")
-
-
-login()
 
 
 def get_date():
