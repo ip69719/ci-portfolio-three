@@ -51,7 +51,7 @@ def login():
         # Get existing user details
         user_details = users.row_values(row_user)
         # check password
-        username_password_input = input("\nPlease enter your password: ")
+        username_password_input = input("Please enter your password: \n")
         if username_password_input == user_details[2]:
             print(f"Welcome back, {existing_user.value}!")
         else:
@@ -71,7 +71,7 @@ def get_date():
     print("\nPlease enter your preferred appointment date.")
     print("Date should be in YYYY-MM-DD format.")
 
-    user_date_str = input("Enter date here: ")
+    user_date_str = input("Enter date here: \n")
     validate_date(user_date_str)
 
 
@@ -100,7 +100,7 @@ def login_register():
     print("Are you a returning Customer?\n")
     print("1 - Yes, I am a returning Customer and I want to Log In.")
     print("2 - No, I am a new Customer and I want to Register.")
-    answer = input("Enter your answer option here: ").strip()
+    answer = input("Enter your answer option here: \n").strip()
     print(answer)
     return answer
 
