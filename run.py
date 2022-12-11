@@ -24,6 +24,16 @@ SHEET = GSPREAD_CLIENT.open('elegant_hairstyles')
 users = SHEET.worksheet('users')
 
 
+def welcome_message():
+    """
+    Welcome message
+    """
+    print("Hello and welcome to Elegant Hairstyles appointment booking system!\n")
+
+
+welcome_message()
+
+
 def login():
     """
     The function allows an existing user to login. Checks if user email
