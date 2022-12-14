@@ -6,6 +6,9 @@ import sys  # used for allowing user to exit the program
 from datetime import datetime  # required to manipulate dates
 import calendar  # import calendar module
 
+# makes sheets dataobjects that are easier to search/manipulate
+import pandas as pd
+
 import gspread
 from google.oauth2.service_account import Credentials
 
