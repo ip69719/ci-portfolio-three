@@ -25,6 +25,32 @@ SHEET = GSPREAD_CLIENT.open('elegant_hairstyles')
 users = SHEET.worksheet('users')
 
 
+class User:
+    """
+    A class used to represent a user
+
+    ...
+    Attributes
+    ----------
+    username = str
+        the customer's username
+    email = str
+        the customer's email (unique to system)
+
+    Methods
+    --------
+    print_future_appointments
+        Return the customer future appointments
+    """
+
+    def __init__(self, username, email):
+        """
+        Instance attributes
+        """
+        self.username = username
+        self.email = email
+
+
 def welcome_message():
     """
     Welcome message
