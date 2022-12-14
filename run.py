@@ -127,10 +127,12 @@ def validate_date(date_str):
     print("Hello from validate_date function")
 
     try:
-        if date_str != datetime.strptime(date_str, "%Y-%m-%d").strftime('%Y-%m-%d'):
+        if date_str != datetime.strptime(date_str, "%Y-%m-%d").strftime('%Y-%m-%d'):  # noqa:E501
             raise ValueError()
+        return True
     except ValueError:
-        print("Invalid data: Date should be in YYYY-MM-DD format, please try again.\n")
+        print("Invalid data: Date should be in YYYY-MM-DD format, please try again.\n")  # noqa:E501
+        return False
 
 
 # Code to help standardise user input written by my Mentor
