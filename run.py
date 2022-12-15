@@ -53,6 +53,17 @@ class User:
         self.username = username
         self.email = email
 
+    def print_future_appointments(self):
+        """
+        Return list of future apointments
+        """
+        # query spreadsheet for future dates & user email & print out appointments   # noqa:E501
+
+        worksheet = SHEET.worksheet('bookings')
+        all_data = pd.DataFrame(worksheet.get_all_records())
+        appointments = all_data.loc[all_data['customer'] == self.email]
+        print(appointments)
+
 
 def welcome_message():
     """
@@ -141,7 +152,7 @@ def main_authenticated_menu(user):
     Allows user to book an appointment.
     """
     print(f"Welcome back, {user.username}!")
-
+    user.print_future_appointments()
     get_date()
 
 
