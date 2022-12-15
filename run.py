@@ -93,13 +93,23 @@ def welcome_message():
 
 def register():
     """
-    The function allows to register a new user.
+    The function allows to register a new user. If user email already
+    exists in the spreadsheet then the user is requested to login, otherwise
+    new user details are collected. 
     """
-    new_username = input("Please enter username: \n")
     new_user_email = input("Please enter your email: \n")
-    new_user_pass = input("Please enter password: \n")
+    # Check if username exists
+    existing_user = users.find(new_user_email, in_column=2)
+    if existing_user:
+        print("The email address you provided is already registered")
+        print("Please Log In")
+        login()
+    else:
+        new_email = new_user_email
+        new_username = input("Please enter username: \n")
+        new_user_pass = input("Please enter password: \n")
 
-    return [new_username, new_user_email, new_user_pass]
+    return [new_email, new_username, new_user_pass]
 
 
 def login():
