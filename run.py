@@ -3,7 +3,7 @@ Imports to support application
 """
 
 import sys  # used for allowing user to exit the program
-from datetime import datetime  # required to manipulate dates
+from datetime import datetime, date  # required to manipulate dates
 import calendar  # import calendar module
 
 # makes sheets dataobjects that are easier to search/manipulate
@@ -55,14 +55,30 @@ class User:
 
     def print_future_appointments(self):
         """
-        Return list of future apointments
+        Method to return list of future apointments.
         """
-        # query spreadsheet for future dates & user email & print out appointments   # noqa:E501
-
+        # get date from bookings spreadsheet
         worksheet = SHEET.worksheet('bookings')
+        # convert into DataFrame and filter records for specific user
         all_data = pd.DataFrame(worksheet.get_all_records())
         appointments = all_data.loc[all_data['customer'] == self.email]
-        print(appointments)
+
+        todays_date = date.today()
+        # create an empty pandas DataFrame
+        future_appts = pd.DataFrame(columns=['stylist', 'time slot', 'date', 'week day', 'customer']) 
+        index = 0
+        # iterate through each row and append rows to the new DataFrame
+        for index, row in appointments.iterrows():
+            appointment_date = datetime.strptime(row['date'], "%Y-%m-%d")
+            if appointment_date.date() >= todays_date:
+                future_appts.loc[index] = row.values
+                index = index + 1
+        # print future appointements
+        if len(future_appts) < 1:
+            print("You have no future apopintments at this time.\n")
+        else:
+            print("Your future apopintment(s).\n")
+            print(future_appts)
 
 
 def welcome_message():
