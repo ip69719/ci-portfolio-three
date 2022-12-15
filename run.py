@@ -91,6 +91,17 @@ def welcome_message():
     print("================================================================================")
 
 
+def register():
+    """
+    The function allows to register a new user.
+    """
+    new_username = input("Please enter username: \n")
+    new_user_email = input("Please enter your email: \n")
+    new_user_pass = input("Please enter password: \n")
+
+    return [new_username, new_user_email, new_user_pass]
+
+
 def login():
     """
     The function allows an existing user to login. Checks if user email
@@ -214,7 +225,7 @@ def login_register():
     if answer == "1":
         login()
     elif answer == "2":
-        print("Register")
+        register()
 
 
 def main():
