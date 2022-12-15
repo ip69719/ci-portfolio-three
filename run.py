@@ -35,7 +35,7 @@ class User:
     ...
     Attributes
     ----------
-    username = str
+    user_name = str
         the customer's username
     email = str
         the customer's email (unique to system)
@@ -83,8 +83,8 @@ def login():
         # check password
         username_password_input = input("Please enter your password: \n")
         if username_password_input == user_details[2]:
-            print(f"Welcome back, {existing_user.value}!")
-            get_date()
+            user = User(user_details[0], user_details[1])
+            main_authenticated_menu(user)
         else:
             print("Incorrect Username and Password combination\n")
             login()
@@ -133,6 +133,16 @@ def validate_date(date_str):
     except ValueError:
         print("Invalid data: Date should be in YYYY-MM-DD format, please try again.\n")  # noqa:E501
         return False
+
+
+def main_authenticated_menu(user):
+    """
+    Function to recap user's apointments.
+    Allows user to book an appointment.
+    """
+    print(f"Welcome back, {user.username}!")
+
+    get_date()
 
 
 # Code to help standardise user input written by my Mentor
