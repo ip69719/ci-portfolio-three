@@ -143,6 +143,8 @@ def get_date():
 
     user_date_str = input("Enter date here: \n")
     validate_date(user_date_str)
+    if not validate_date(user_date_str):
+        get_date()
     return user_date_str
 
 
