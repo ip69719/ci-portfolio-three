@@ -167,11 +167,22 @@ def validate_date(date_str):
 def main_authenticated_menu(user):
     """
     Function to recap user's apointments.
-    Allows user to book an appointment.
+    Allows user to book an appointment or exit.
     """
     print(f"Welcome back, {user.username}!")
     user.print_future_appointments()
-    get_date()
+
+    print("\nWould you like to book a new appointment?\n")
+    print("Please select from the following options by entering 1 or 2.\n")
+    print("1 - Yes, I want to book an appointment.")
+    print("2 - No, I want to exit the booking system.")
+
+    answer = check_user_answer()
+    if answer == "1":
+        print("book new appointment")
+        get_date()
+    elif answer == "2":
+        sys.exit("Thank you for using our booking system!")
 
 
 # Code to help standardise user input written by my Mentor
