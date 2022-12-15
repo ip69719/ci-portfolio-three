@@ -138,8 +138,9 @@ def login():
             login()
     else:
         # username doesn't exist
-        print("Incorrect Username and Password combination\n")
-        login()
+        print("The email address you provided is not yet registered")
+        print("Please register for free account")
+        register()
 
 
 def get_weekday():
