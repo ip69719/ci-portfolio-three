@@ -64,7 +64,7 @@ class User:
 
         todays_date = date.today()
         # create an empty pandas DataFrame
-        future_appts = pd.DataFrame(columns=['stylist', 'time slot', 'date', 'week day', 'customer'])
+        future_appts = pd.DataFrame(columns=['stylist', 'time slot', 'date', 'week day', 'customer'])  # noqa:E501
         index = 0
         # iterate through each row and append rows to the new DataFrame
         for index, row in appointments.iterrows():
@@ -76,7 +76,7 @@ class User:
         if len(future_appts) < 1:
             print("You have no future apopintments at this time.\n")
         else:
-            print("Your future apopintment(s).\n")
+            print("Your future apopintment(s):\n")
             print(future_appts)
 
 
@@ -84,10 +84,10 @@ def welcome_message():
     """
     Welcome message
     """
-    logo = pyfiglet.figlet_format("     E l e g a n t\n           H a i r s t y l e s")
+    logo = pyfiglet.figlet_format("     E l e g a n t\n           H a i r s t y l e s")  # noqa:E501
     print(logo)
-    print("       Hello and welcome to Elegant Hairstyles appointment booking system!\n")
-    print("================================================================================")
+    print("       Hello and welcome to Elegant Hairstyles appointment booking system!\n")  # noqa:E501
+    print("================================================================================")  # noqa:E501
 
 
 def register():
@@ -96,17 +96,17 @@ def register():
     exists in the spreadsheet then the user is requested to login, otherwise
     new user details are collected.
     """
-    new_user_email = input("Please enter your email: \n")
+    new_user_email = input("\nPlease enter your email: \n")
     # Check if username exists
     existing_user = users.find(new_user_email, in_column=2)
     if existing_user:
-        print("The email address you provided is already registered")
+        print("\n The email address you provided is already registered.")
         print("Please Log In")
         login()
     else:
         new_email = new_user_email
-        new_username = input("Please enter username: \n")
-        new_user_pass = input("Please enter password: \n")
+        new_username = input("\nPlease enter username: \n")
+        new_user_pass = input("\nPlease enter password: \n")
 
     return [new_email, new_username, new_user_pass]
 
@@ -130,8 +130,8 @@ def login():
     The function allows an existing user to login. Checks if user email
     matches to the record stored in the users worksheet.
     """
-    email_input = input("\nPlease enter your email: ")
-    print("Thank you. Please wait while we retrieve your details...")
+    email_input = input("\nPlease enter your email:\n")
+    print("\nThank you. Please wait while we retrieve your details...\n")
 
     # Check if username exists
     existing_user = users.find(email_input, in_column=2)
@@ -204,10 +204,10 @@ def main_authenticated_menu(user):
     Function to recap user's apointments.
     Allows user to book an appointment or exit.
     """
-    print(f"Welcome back, {user.username}!")
+    print(f"\nWelcome, {user.username}!")
     user.print_future_appointments()
 
-    print("\nWould you like to book a new appointment?\n")
+    print("\nWould you like to book a new appointment?")
     print("Please select from the following options by entering 1 or 2.\n")
     print("1 - Yes, I want to book an appointment.")
     print("2 - No, I want to exit the booking system.")
@@ -241,7 +241,7 @@ def login_register():
     Function to check if User wants to Log In or Register.
     Checks if User input is a valid answer option.
     """
-    print("Are you a returning Customer?\n")
+    print("\nAre you a returning Customer?\n")
     print("1 - Yes, I am a returning Customer and I want to Log In.")
     print("2 - No, I am a new Customer and I want to Register.")
 
