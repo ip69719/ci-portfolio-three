@@ -1,7 +1,6 @@
 """
 Imports to support application
 """
-
 import sys  # used for allowing user to exit the program
 from datetime import datetime, date  # required to manipulate dates
 import calendar  # import calendar module
@@ -110,6 +109,20 @@ def register():
         new_user_pass = input("Please enter password: \n")
 
     return [new_email, new_username, new_user_pass]
+
+
+def add_new_user():
+    """
+    Function to insert new use record into spreadsheet
+    """
+    new_user = register()
+    user_worksheet = SHEET.worksheet("users")
+    user_worksheet.append_row(new_user)
+
+    print("Registration complete!")
+
+    user = User(new_user[0], new_user[1])
+    main_authenticated_menu(user)
 
 
 def login():
@@ -236,7 +249,7 @@ def login_register():
     if answer == "1":
         login()
     elif answer == "2":
-        register()
+        add_new_user()
 
 
 def main():
