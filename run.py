@@ -173,13 +173,14 @@ def get_date():
     """
     Function to get the preferred appointment date from user
     """
-    print("\nPlease enter your preferred appointment date.")
-    print("Date should be in YYYY-MM-DD format.")
+    while True:
+        print("\nPlease enter your preferred appointment date.")
+        print("Date should be in YYYY-MM-DD format.")
 
-    user_date_str = input("Enter date here: \n")
-    validate_date(user_date_str)
-    if not validate_date(user_date_str):
-        get_date()
+        user_date_str = input("Enter date here: \n")
+        if validate_date(user_date_str):
+            print("Thank you. Please wait while we are checking availability")
+            break
     return user_date_str
 
 
