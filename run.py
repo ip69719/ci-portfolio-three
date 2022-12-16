@@ -64,7 +64,7 @@ class User:
 
         todays_date = date.today()
         # create an empty pandas DataFrame
-        future_appts = pd.DataFrame(columns=['stylist', 'time slot', 'date', 'week day', 'customer']) 
+        future_appts = pd.DataFrame(columns=['stylist', 'time slot', 'date', 'week day', 'customer'])
         index = 0
         # iterate through each row and append rows to the new DataFrame
         for index, row in appointments.iterrows():
@@ -94,7 +94,7 @@ def register():
     """
     The function allows to register a new user. If user email already
     exists in the spreadsheet then the user is requested to login, otherwise
-    new user details are collected. 
+    new user details are collected.
     """
     new_user_email = input("Please enter your email: \n")
     # Check if username exists
