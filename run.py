@@ -2,7 +2,7 @@
 Imports to support application
 """
 import sys  # used for allowing user to exit the program
-from datetime import datetime, date  # required to manipulate dates
+from datetime import datetime, date, timedelta  # required to manipulate dates
 import calendar  # import calendar module
 
 # makes sheets dataobjects that are easier to search/manipulate
@@ -185,14 +185,24 @@ def get_date():
 
 def validate_date(date_str):
     """
-    Function checks if date input by User matches the expected format
-    and raises ValueError if it does not.
-    """
-    print("Hello from validate_date function")
+    Function checks if date input by User matches the expected format, is a
+    future date and raises ValueError if it does not.
 
+    Adopted code from this Stack Overflow post to implement date validation:
+    https://stackoverflow.com/questions/16870663/how-do-i-validate-a-date-string-format-in-python
+
+    """
     try:
         if date_str != datetime.strptime(date_str, "%Y-%m-%d").strftime('%Y-%m-%d'):  # noqa:E501
             raise ValueError()
+        # Code to check that the date is in the future written by my Mentor
+        date_entered = datetime.strptime(date_str, "%Y-%m-%d")
+        todays_date = datetime.now()
+        tomorrow = todays_date + timedelta(days=1)
+        tomorrow_date_string = tomorrow.strptime(date_str, "%Y-%m-%d")
+        if date_entered.date() < tomorrow.date():
+            print(f"Please enter a future date: {tomorrow_date_string } or later")  # noqa:E501
+            return False
         return True
     except ValueError:
         print("Invalid data: Date should be in YYYY-MM-DD format, please try again.\n")  # noqa:E501
