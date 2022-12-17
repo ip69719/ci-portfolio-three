@@ -156,19 +156,6 @@ def login():
         register()
 
 
-def get_weekday():
-    """
-    Get day of the week from the user input date
-    """
-    user_date_str = get_date()
-    # create date object in given format yyyy-mm-dd'
-    user_date = datetime.strptime(user_date_str, "%Y-%m-%d")
-    # to get name of day from date
-    print('Day of Week (str): ', calendar.day_name[user_date.weekday()])
-    weekday = calendar.day_name[user_date.weekday()]
-    print(weekday)
-
-
 def get_date():
     """
     Function to get the preferred appointment date from user
