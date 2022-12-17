@@ -179,7 +179,6 @@ def get_date():
 
         user_date_str = input("Enter date here: \n")
         if validate_date(user_date_str):
-            print("Thank you. Please wait while we are checking availability")
             break
     return user_date_str
 
@@ -225,10 +224,18 @@ def main_authenticated_menu(user):
 
     answer = check_user_answer()
     if answer == "1":
-        print("book new appointment")
+        book_appt()
         get_date()
     elif answer == "2":
         sys.exit("Thank you for using our booking system!")
+
+
+def book_appt():
+    """
+    Function to exit the app
+    """
+    print("\nPlease call us to schedule an appointment.")
+    sys.exit("Thank you for using our booking system!")
 
 
 # Code to help standardise user input written by my Mentor
