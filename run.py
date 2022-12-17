@@ -27,6 +27,7 @@ users = SHEET.worksheet('users')
 class User:
     """
     A class used to represent a user
+    Code method written with help of my Mentor.
 
     ...
     Attributes
