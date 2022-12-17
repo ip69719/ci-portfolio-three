@@ -19,7 +19,7 @@ Elegant Hairstyles appointment booking is an app which runs on Code Institute mo
 
 * Register
     * Users will be required to register to use the app.
-    * Already registered users can login with 
+    * Already registered users can login with their credentials.
 
 * Print Future Appointments
     * All the upcoming appointments associated with the authenticated user are displayed upon successful login.
@@ -34,6 +34,7 @@ Elegant Hairstyles appointment booking is an app which runs on Code Institute mo
 * Create booking feature was not complete due to time constrains. It will be included in the future release. Code associated with this feature was removed.
 * Add email validation to ensure that the email format is valid.
 * Hide password, so it is not visible when typed in the terminal.
+* Reset password.
 * Allow stylists check upcoming appointments and client's details via app.
 
 ## Technologies used
@@ -67,7 +68,7 @@ Elegant Hairstyles appointment booking is an app which runs on Code Institute mo
 * Confirmed that only date provided in expected format (YYYY-MM-DD) is accepted.
 * Confirmed that if the input date is not in the future, then request for valid input repeated.
 * Confirmed that the same email address cannot register more than once.
-* Confirmed that input provided on registration is save to the user details spreadsheet.
+* Confirmed that input provided on registration is saved to the user details tab in the spreadsheet.
 * Confirmed that appointments associated with the authenticated user only are displayed upon successful login.
 
 ### Defect Tracking
