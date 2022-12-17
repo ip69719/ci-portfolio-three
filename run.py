@@ -1,9 +1,6 @@
-"""
-Imports to support application
-"""
+# Imports to support application
 import sys  # used for allowing user to exit the program
 from datetime import datetime, date, timedelta  # required to manipulate dates
-import calendar  # import calendar module
 
 # makes sheets dataobjects that are easier to search/manipulate
 import pandas as pd
