@@ -79,6 +79,24 @@ class User:
             print(future_appts)
 
 
+def enter_email():
+    """
+    Function checks if an email input is valid.
+    
+    The code was written with reference to the following GeeksforGeeks tutorial
+    https://www.geeksforgeeks.org/check-if-email-address-valid-or-not-in-python/
+    """
+
+    
+    regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
+    new_user_email = input("\nPlease enter your email: \n")
+    while not re.fullmatch(regex, new_user_email):
+        print("Plese enter a valid email address")
+        new_user_email = input("\nPlease enter your email: \n")
+    
+    return new_user_email
+
+
 def welcome_message():
     """
     Welcome message
