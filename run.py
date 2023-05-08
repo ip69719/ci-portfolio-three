@@ -113,7 +113,7 @@ def register():
     exists in the spreadsheet then the user is requested to login, otherwise
     new user details are collected.
     """
-    new_user_email = input("\nPlease enter your email: \n")
+    new_user_email = enter_email()
     # Check if username exists
     existing_user = users.find(new_user_email, in_column=2)
     if existing_user:
@@ -147,7 +147,7 @@ def login():
     The function allows an existing user to login. Checks if user email
     matches to the record stored in the users worksheet.
     """
-    email_input = input("\nPlease enter your email:\n")
+    email_input = enter_email()
     print("\nThank you. Please wait while we retrieve your details...\n")
 
     # Check if username exists
