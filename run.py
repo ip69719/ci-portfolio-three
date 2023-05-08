@@ -134,7 +134,7 @@ def register():
         login()
     else:
         new_email = new_user_email
-        new_username = input("\nPlease enter username: \n")
+        new_username = get_username()
         new_user_pass = input("\nPlease enter password: \n")
 
     return [new_username, new_email, new_user_pass]
