@@ -110,6 +110,7 @@ The project was deployed to Heroku using the following steps:
 * Learned how to read Google Sheets data using Python from [this](https://medium.com/geekculture/2-easy-ways-to-read-google-sheets-data-using-python-9e7ef366c775) article written by BK Lin.
 * Learned about ASCII art using pyfiglet module from [this](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/) GeeksforGeeks tutorial.
 * Learned how to select rows from Pandas DataFrame based on a condition from [this](https://www.geeksforgeeks.org/how-to-select-rows-from-pandas-dataframe/) GeeksforGeeks tutorial.
+* Learned how to validate email address using regular expression from [this](https://www.geeksforgeeks.org/check-if-email-address-valid-or-not-in-python/) GeeksforGeeks tutorial.
 
 ### Acknowledgements
 
