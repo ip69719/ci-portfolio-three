@@ -125,7 +125,7 @@ def register():
         new_username = input("\nPlease enter username: \n")
         new_user_pass = input("\nPlease enter password: \n")
 
-    return [new_email, new_username, new_user_pass]
+    return [new_username, new_email, new_user_pass]
 
 
 def add_new_user():
