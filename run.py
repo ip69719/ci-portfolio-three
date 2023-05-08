@@ -97,6 +97,18 @@ def enter_email():
     return new_user_email
 
 
+def get_username():
+    """
+    Function checks that username is not empty and
+    repeats request until a valid username is provided.
+    """
+    username = input("\nPlease enter username: \n")
+    while len(username.strip()) < 1:
+        print("invalid user name")
+        username = input("\nPlease enter username: \n")
+    return username
+
+
 def welcome_message():
     """
     Welcome message
