@@ -2,6 +2,7 @@
 import sys  # used for allowing user to exit the program
 from datetime import datetime, date, timedelta  # required to manipulate dates
 import re # required for email address validation
+from tabulate import tabulate # 
 
 # makes sheets dataobjects that are easier to search/manipulate
 import pandas as pd
@@ -76,7 +77,7 @@ class User:
             print("You have no future apopintments at this time.\n")
         else:
             print("Your future apopintment(s):\n")
-            print(future_appts)
+            print(tabulate(future_appts, headers = 'keys', tablefmt = 'psql'))
 
 
 def enter_email():
