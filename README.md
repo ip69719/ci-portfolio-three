@@ -4,7 +4,10 @@
 
 ## Project Overview
 
-Elegant Hairstyles appointment booking is an app which runs on Code Institute mock terminal on Heroku.
+Elegant Hairstyles is a small imaginary hairdressing business that utilises an online appointments scheduling assistance app which runs on Code Institute mock terminal on Heroku.
+
+The app allows customers to view their bookings and to check availablity at any time without the need to contact the Hairdressers.
+Staff at Elegant Hairstyles spend less time taking bookings over the phone because customers already know what date and time slot suits them before they call.
 
 ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/image.png)
 
