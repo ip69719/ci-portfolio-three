@@ -276,6 +276,10 @@ def validate_date(date_str):
         return False
 
 
+def free_appt():
+    user_date_str = get_date()
+
+
 def main_authenticated_menu(user):
     """
     Function to recap user's apointments.
@@ -291,8 +295,9 @@ def main_authenticated_menu(user):
 
     answer = check_user_answer()
     if answer == "1":
-        book_appt()
-        get_date()
+        #book_appt()
+        # get_date()
+        free_appt()
     elif answer == "2":
         sys.exit("Thank you for using our booking system!")
 
