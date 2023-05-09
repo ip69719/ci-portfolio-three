@@ -112,6 +112,7 @@ The project was deployed to Heroku using the following steps:
 * Learned how to select rows from Pandas DataFrame based on a condition from [this](https://www.geeksforgeeks.org/how-to-select-rows-from-pandas-dataframe/) GeeksforGeeks tutorial.
 * Learned how to validate email address using regular expression from [this](https://www.geeksforgeeks.org/check-if-email-address-valid-or-not-in-python/) GeeksforGeeks tutorial.
 * Learned how to trim whitespace from a string in python from [this](https://www.digitalocean.com/community/tutorials/python-trim-string-rstrip-lstrip-strip) Digital Ocean tutorial.
+* Learned how to add password checks from [this](https://stackoverflow.com/questions/37794949/regular-expressions-for-password-in-python-3) Stack Overflow post.
 
 ### Acknowledgements
 
