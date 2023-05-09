@@ -109,6 +109,33 @@ def get_username():
     return username
 
 
+def get_password():
+    while True:
+        print("\nPlease enter a password that is at least 8 characters long and contains at least 1 digit and 1 uppercase character.\n")
+        password = input("\nPlease enter password: \n")
+        if validate_password(password):
+            break
+    return password
+
+
+def validate_password(password):
+    """
+    https://stackoverflow.com/questions/37794949/regular-expressions-for-password-in-python-3
+    """
+    try:
+        if len(password) < 8:
+            raise ValueError()
+        if not any(c.isdigit() for c in password):
+            raise ValueError()
+        if not any(c.isupper() for c in password):
+            raise ValueError()
+        return True
+    except ValueError:
+        print("Invalid password, please try again.\n")
+        print("\nPassword must be at least 8 characters long and contain at least 1 digit and 1 uppercase character.\n")
+        return False
+
+
 def welcome_message():
     """
     Welcome message
@@ -135,7 +162,7 @@ def register():
     else:
         new_email = new_user_email
         new_username = get_username()
-        new_user_pass = input("\nPlease enter password: \n")
+        new_user_pass = get_password()
 
     return [new_username, new_email, new_user_pass]
 
