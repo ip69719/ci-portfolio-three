@@ -101,6 +101,9 @@ Staff at Elegant Hairstyles spend less time taking bookings over the phone becau
 
 Issues are documented and tracked on [GitHub](https://github.com/ip69719/ci-portfolio-three/issues?q=is%3Aissue+is%3Aclosed).
 
+## Version Control
+Previously some of my commit messages were too generic. I made improvements in the current release and my commit messages are much more descriptive.
+
 ## Deployment
 
 The project was deployed to Heroku using the following steps:
