@@ -9,7 +9,7 @@ Elegant Hairstyles is a small imaginary hairdressing business that utilises an o
 The app allows customers to view their bookings and to check availablity at any time without the need to contact the Hairdressers.
 Staff at Elegant Hairstyles spend less time taking bookings over the phone because customers already know what date and time slot suits them before they call.
 
-![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/image.png)
+![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/image.png)
 
 
 ## Features
