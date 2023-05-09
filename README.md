@@ -32,6 +32,13 @@ Elegant Hairstyles appointment booking is an app which runs on Code Institute mo
         * Correctly formatted email is accepted and the registration process progresses to the next step.
         ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/valid_email_reg.png)
 
+    * **Username validation**
+        * User input for Username is validated to ensure that it is not empty.
+        * If User enters a whitespace character or just hits the return key then the request for data is repeated until expected input is provided.
+        ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/username_validation_error.png)
+        * Username that meets the requirements is accepted and the registration process progresses to the next step.
+        ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/valid_username_reg.png)
+
 ### Features Left to Implement
 
 * Create booking feature was not complete due to time constrains. It will be included in the future release. Code associated with this feature was removed.
