@@ -136,6 +136,14 @@ def get_password():
 
 def validate_password(password):
     """
+    Function checks user password against the following conditions:
+        - Password must be at least 8 characters long
+        - Password must contain at least 1 digit
+        - Password must have at least 1 uppercase character
+
+    The results from this function are passed to get_password()
+
+    Code was adopted from this Stack Overflow post:
     https://stackoverflow.com/questions/37794949/regular-expressions-for-password-in-python-3
     """
     try:
