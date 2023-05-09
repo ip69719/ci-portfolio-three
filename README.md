@@ -140,6 +140,7 @@ The project was deployed to Heroku using the following steps:
 * Learned how to add password checks from [this](https://stackoverflow.com/questions/37794949/regular-expressions-for-password-in-python-3) Stack Overflow post.
 * Learned how to display the Pandas DataFrame in table style from [this](https://www.geeksforgeeks.org/display-the-pandas-dataframe-in-table-style/) GeeksforGeeks tutorial.
 * Learned how to print Pandas DataFrame without index from [this](https://stackoverflow.com/questions/24644656/how-to-print-pandas-dataframe-without-index) Stack Overflow post.
+* Learned how to append rows to empty pandas DataFrame within for Loop from [this](https://statisticsglobe.com/append-rows-pandas-dataframe-loop-python) Statistics Globe tutorial.
 
 ### Acknowledgements
 
