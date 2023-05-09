@@ -50,6 +50,7 @@ Elegant Hairstyles appointment booking is an app which runs on Code Institute mo
 * [google-auth](https://pypi.org/project/google-auth/) is required to set up the authentication needed to access my Google Cloud project.
 * [Pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/overview.html) Python package used to manipulate and display data from Google Sheets.
 * [pyglet](https://pypi.org/project/pyglet/) was used to create logo.
+* [Tabulate](https://pypi.org/project/tabulate/) Python library used to display Pandas dataframes in a table style.
 * [Git](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
 * [GitHub](https://github.com/) is used to store the project code after being pushed from Git.
 * [Heroku](https://www.heroku.com/about) was used to deploy the app. 
