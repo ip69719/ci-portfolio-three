@@ -296,7 +296,7 @@ def validate_date(date_str):
 
 def free_appt():
     """
-    This function was written with help of my Mentor 
+    This function was written with help of my Mentor
     Malia Havlicek: https://github.com/maliahavlicek.
 
     The function collects data from the bookings spreadsheet and limits it
@@ -306,8 +306,8 @@ def free_appt():
     to open time slots for day selected.
 
     The for loop within the function iterates over current schedule and appends
-    rows with free time slots for day selected to an empty dataframe. The output
-    is displayed to the user along with options to choose from.
+    rows with free time slots for day selected to an empty dataframe.
+    The output is displayed to the user along with options to choose from.
 
     """
     user_date_str = get_date()
