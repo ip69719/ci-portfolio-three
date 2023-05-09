@@ -77,7 +77,7 @@ class User:
             print("You have no future apopintments at this time.\n")
         else:
             print("Your future apopintment(s):\n")
-            print(tabulate(future_appts, headers = 'keys', tablefmt = 'psql'))
+            print(tabulate(future_appts, headers = 'keys', tablefmt = 'psql', showindex=False))
 
 
 def enter_email():
