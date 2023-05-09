@@ -1,4 +1,4 @@
-# Elegant Hairstyles appointment booking
+# Elegant Hairstyles appointments scheduling assistance app
 
 [Link to the live project](https://elegant-hairstyles-booking-app.herokuapp.com/)
 
