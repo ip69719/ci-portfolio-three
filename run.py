@@ -349,7 +349,9 @@ def free_appt():
     if len(available_appt) > 0:
         print(f"\n We have availability on {day_selected.capitalize()}, {user_date_str}!\n")  # noqa:E501
         print("\n Please call us to book an appointment: \n")
-        print(available_time)
+        print(tabulate(
+            available_time, headers='keys', tablefmt='psql', showindex=False)
+            )
     # if there are no free time slots for selected day
     else:
         print(f"\nUnfortunately we do not have any availability on {day_selected.capitalize()} {user_date_str}!\n")  # noqa:E501
