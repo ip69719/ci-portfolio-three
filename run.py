@@ -345,8 +345,8 @@ def free_appt():
             available_time = available_appt[['stylist', 'time slot']]
     # if there are any free time slots for selected day
     if len(available_appt) > 0:
-        print(f"\n We have availability on {day_selected.capitalize()}, {user_date_str}!\n")  # noqa:E501
-        print("\n Please call us to book an appointment: \n")
+        print(f"\nWe have availability on {day_selected.capitalize()}, {user_date_str}!\n")  # noqa:E501
+        print("Please call us to book an appointment: \n")
         print(tabulate(
             available_time, headers='keys', tablefmt='psql', showindex=False)
             )
