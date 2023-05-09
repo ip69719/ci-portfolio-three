@@ -251,6 +251,21 @@ def get_date():
     return user_date_str
 
 
+def get_weekday(user_date_str):
+    """
+    Function to get day of the week from the user date input.
+
+    Code written with reference to this tutorial:
+    https://pynative.com/python-get-the-day-of-week/
+    """
+    # create date object in given format yyyy-mm-dd'
+    user_date = datetime.strptime(user_date_str, "%Y-%m-%d")
+    # to get name of day from date
+    print('Day of Week for date selected is: ', calendar.day_name[user_date.weekday()])
+    weekday = calendar.day_name[user_date.weekday()].lower()
+    return weekday
+
+
 def validate_date(date_str):
     """
     Function checks if date input by User matches the expected format, is a
@@ -279,6 +294,7 @@ def validate_date(date_str):
 
 def free_appt():
     user_date_str = get_date()
+    day_selected = get_weekday(user_date_str)
 
 
 def main_authenticated_menu(user):
