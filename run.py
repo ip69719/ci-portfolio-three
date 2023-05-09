@@ -86,10 +86,13 @@ class User:
 
 def enter_email():
     """
-    Function checks if an email input is valid.
+    Function checks if an email input is valid and repeats request until
+    an email address in a valid format is provided. The valid email address
+    pattern is: username + @ symbol + domain name.
 
     The code was written with reference to the following GeeksforGeeks tutorial
     https://www.geeksforgeeks.org/check-if-email-address-valid-or-not-in-python/
+
     """
     regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
     new_user_email = input("\nPlease enter your email: \n")
