@@ -112,7 +112,9 @@ def get_username():
     """
     username = input("\nPlease enter username: \n")
     while len(username.strip()) < 1:
-        print("invalid user name")
+        print("\nYou have entered an invalid username.")
+        print("Username cannot be empty.")
+        print("Please enter a username that is at least one character long.")
         username = input("\nPlease enter username: \n")
     return username
 
