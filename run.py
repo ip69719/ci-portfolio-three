@@ -1,7 +1,7 @@
 # Imports to support application
 import sys  # used for allowing user to exit the program
 from datetime import datetime, date, timedelta  # required to manipulate dates
-import calendar # import calendar module used to get day of the week
+import calendar  # import calendar module used to get day of the week
 import re  # required for email address validation
 from tabulate import tabulate  # used to display the pandas df in a table style
 
