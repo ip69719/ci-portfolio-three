@@ -353,7 +353,18 @@ def free_appt():
     # if there are no free time slots for selected day
     else:
         print(f"\nUnfortunately we do not have any availability on {day_selected.capitalize()} {user_date_str}!\n")  # noqa:E501
-        print("Would you like to choose a different day or exit?")
+
+    print("\nWould you like to choose a different day or exit?")
+    print("Please select from the following options by entering 1 or 2.\n")
+    print("1 - I would like to choose a different day.")
+    print("2 - I would like to exit the system.")
+
+    answer = check_user_answer()
+
+    if answer == "1":
+        free_appt()
+    elif answer == "2":
+        sys.exit("Thank you for using our appointments scheduling system!")
 
 
 def main_authenticated_menu(user):
