@@ -39,6 +39,14 @@ Elegant Hairstyles appointment booking is an app which runs on Code Institute mo
         * Username that meets the requirements is accepted and the registration process progresses to the next step.
         ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/valid_username_reg.png)
 
+    * **Password validation**
+        * User input for Password is validated against specified password requirements.
+        * Password must be at least eight characters long, must contain at least one digit and must have at least one character in uppercase.
+        * If User enters a password which does not meet the requirements then the request for data is repeated until expected input is provided.
+        ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/password_validation_error.png)
+        * Password that meets the requirements is accepted and the registration process is complete.
+        ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/valid_password_reg.png)
+
 ### Features Left to Implement
 
 * Create booking feature was not complete due to time constrains. It will be included in the future release. Code associated with this feature was removed.
