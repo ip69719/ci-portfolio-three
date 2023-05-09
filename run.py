@@ -147,8 +147,7 @@ def validate_password(password):
             raise ValueError()
         return True
     except ValueError:
-        print("Invalid password, please try again.\n")
-        print("\nPassword must be at least 8 characters long and contain at least 1 digit and 1 uppercase character.\n")
+        print("\nInvalid password, please try again.")
         return False
 
 
