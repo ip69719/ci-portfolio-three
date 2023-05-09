@@ -25,9 +25,12 @@ Elegant Hairstyles appointment booking is an app which runs on Code Institute mo
     * All the upcoming appointments associated with the authenticated user are displayed upon successful login.
 
 * Input validation
-    * Email address provided by the user is validated against the list of registered emails.
-    * User can only enter a valid answer option from the list of available options.
-    * Date input is validated to ensure that it is a future date and in expected format.
+    * **Email validation**
+        * User input for email address is validated against the following pattern: username + @ symbol + domain name.
+        * If User enters an invalid email address then the request for data is repeated until an email in a valid format is provided.
+        ![](https://github.com/ip69719/ci-portfolio-three/tree/main/docs/images)
+        * Correctly formatted email is accepted and the registration process progresses to the next step.
+        ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/valid_email_reg.png)
 
 ### Features Left to Implement
 
