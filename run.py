@@ -165,7 +165,8 @@ def welcome_message():
     """
     logo = pyfiglet.figlet_format("     E l e g a n t\n           H a i r s t y l e s")  # noqa:E501
     print(logo)
-    print("       Hello and welcome to Elegant Hairstyles appointment booking system!\n")  # noqa:E501
+    print("         Hello and welcome to our appointment scheduling assistance app!\n")  # noqa:E501
+    print("                You need to have an account to use this service.")
     print("================================================================================")  # noqa:E501
 
 
