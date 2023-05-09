@@ -50,7 +50,6 @@ Elegant Hairstyles appointment booking is an app which runs on Code Institute mo
 ### Features Left to Implement
 
 * Create booking feature was not complete due to time constrains. It will be included in the future release. Code associated with this feature was removed.
-* Add email validation to ensure that the email format is valid.
 * Hide password, so it is not visible when typed in the terminal.
 * Reset password.
 * Allow stylists check upcoming appointments and client's details via app.
