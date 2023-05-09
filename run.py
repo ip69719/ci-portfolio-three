@@ -126,7 +126,8 @@ def get_password():
     until a valid password is provided.
     """
     while True:
-        print("\nPlease enter a password that is at least 8 characters long and contains at least 1 digit and 1 uppercase character.\n")
+        print("\nPlease enter a password that is at least 8 characters long.")
+        print("It must contain at least 1 digit and 1 uppercase character.")
         password = input("\nPlease enter password: \n")
         if validate_password(password):
             break
