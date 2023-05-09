@@ -71,6 +71,8 @@ Staff at Elegant Hairstyles spend less time taking bookings over the phone becau
 * [Pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/overview.html) Python package used to manipulate and display data from Google Sheets.
 * [pyglet](https://pypi.org/project/pyglet/) was used to create logo.
 * [Tabulate](https://pypi.org/project/tabulate/) Python library used to display Pandas dataframes in a table style.
+* [Python Datetime](https://docs.python.org/3/library/datetime.html) module used to manipulate dates.
+* [Python Calendar](https://docs.python.org/3/library/calendar.html) module used to get day of the week.
 * [Git](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
 * [GitHub](https://github.com/) is used to store the project code after being pushed from Git.
 * [Heroku](https://www.heroku.com/about) was used to deploy the app. 
