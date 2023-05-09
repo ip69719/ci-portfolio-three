@@ -25,6 +25,7 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('elegant_hairstyles')
 
 users = SHEET.worksheet('users')
+bookings = SHEET.worksheet('bookings')
 
 
 class User:
@@ -293,8 +294,17 @@ def validate_date(date_str):
 
 
 def free_appt():
+    """
+    
+    """
     user_date_str = get_date()
     day_selected = get_weekday(user_date_str)
+    date_selected = user_date_str
+
+    # get data from bookings spreadsheet and limit it to date selected by user
+    bookings_all = pd.DataFrame(bookings.get_all_records())
+    current_bookings = bookings_all.loc[bookings_all['date'] == date_selected]
+    print(current_bookings)
 
 
 def main_authenticated_menu(user):
