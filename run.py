@@ -26,6 +26,7 @@ SHEET = GSPREAD_CLIENT.open('elegant_hairstyles')
 
 users = SHEET.worksheet('users')
 bookings = SHEET.worksheet('bookings')
+schedule = SHEET.worksheet('schedule')
 
 
 class User:
@@ -295,7 +296,7 @@ def validate_date(date_str):
 
 def free_appt():
     """
-    
+
     """
     user_date_str = get_date()
     day_selected = get_weekday(user_date_str)
@@ -305,6 +306,11 @@ def free_appt():
     bookings_all = pd.DataFrame(bookings.get_all_records())
     current_bookings = bookings_all.loc[bookings_all['date'] == date_selected]
     print(current_bookings)
+
+    # get data from schedule spreadsheet and limit it to the rows where the day of week column ==“open”
+    schedule_all = pd.DataFrame(schedule.get_all_records())
+    current_schedule = schedule_all.loc[schedule_all[day_selected] == 'open']
+    print(current_schedule)
 
 
 def main_authenticated_menu(user):
