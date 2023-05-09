@@ -263,7 +263,7 @@ def get_weekday(user_date_str):
     # create date object in given format yyyy-mm-dd'
     user_date = datetime.strptime(user_date_str, "%Y-%m-%d")
     # to get name of day from date
-    print('Day of Week for date selected is: ', calendar.day_name[user_date.weekday()])
+    print('Day of Week for date selected is: ', calendar.day_name[user_date.weekday()])  # noqa:E501
     weekday = calendar.day_name[user_date.weekday()].lower()
     return weekday
 
