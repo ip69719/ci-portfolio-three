@@ -387,14 +387,6 @@ def main_authenticated_menu(user):
         sys.exit("Thank you for using our booking system!")
 
 
-def book_appt():
-    """
-    Function to exit the app
-    """
-    print("\nPlease call us to schedule an appointment.")
-    sys.exit("Thank you for using our booking system!")
-
-
 # Code to help standardise user input written by my Mentor
 def check_user_answer():
     """
