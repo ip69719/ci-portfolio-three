@@ -302,15 +302,44 @@ def free_appt():
     day_selected = get_weekday(user_date_str)
     date_selected = user_date_str
 
-    # get data from bookings spreadsheet and limit it to date selected by user
+    # get data from bookings spreadsheet
     bookings_all = pd.DataFrame(bookings.get_all_records())
+    # limit data to date selected by user
     current_bookings = bookings_all.loc[bookings_all['date'] == date_selected]
     print(current_bookings)
 
-    # get data from schedule spreadsheet and limit it to the rows where the day of week column ==“open”
+    # get data from schedule spreadsheet
     schedule_all = pd.DataFrame(schedule.get_all_records())
+    # limit it to the rows where the day of week column ==“open”
     current_schedule = schedule_all.loc[schedule_all[day_selected] == 'open']
     print(current_schedule)
+
+    # create an empty pandas DataFrame
+    available_appt = pd.DataFrame(
+        columns=[
+            'stylist', 'time slot',  'monday', 'tuesday',  'wednesday',
+            'thursday', 'friday', 'saturday', 'sunday'])
+    index = 0
+
+    # the below code was written with help of my Mentor.
+    for index, row in current_schedule.iterrows():
+        available_stylist = row['stylist']
+        available_time_slot = row['time slot']
+        already_booked = current_bookings[
+            (current_bookings['stylist'] == available_stylist) & (
+                current_bookings['time slot'] == available_time_slot)]
+        # returns all open appointments on the day
+        if len(already_booked) == 0:
+            available_appt.loc[index] = row.values
+            index = index + 1
+    # if there are any free time slots for selected day
+    if len(available_appt) > 0:
+        print(f"\n We have availability on {day_selected.capitalize()}, {user_date_str}!\n")  # noqa:E501
+        print("\n Please call us to book an appointment: \n")
+    # if there are no free time slots for selected day
+    else:
+        print(f"\nUnfortunately we do not have any availability on {day_selected.capitalize()} {user_date_str}!\n")  # noqa:E501
+        print("Would you like to choose a different day or exit?")
 
 
 def main_authenticated_menu(user):
