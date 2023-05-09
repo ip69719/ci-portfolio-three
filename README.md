@@ -75,6 +75,8 @@ Elegant Hairstyles appointment booking is an app which runs on Code Institute mo
 
 ### Defect Tracking
 
+Issues are documented and tracked on [GitHub](https://github.com/ip69719/ci-portfolio-three/issues?q=is%3Aissue+is%3Aclosed).
+
 ## Deployment
 
 The project was deployed to Heroku using the following steps:
