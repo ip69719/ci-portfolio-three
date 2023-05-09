@@ -344,10 +344,12 @@ def free_appt():
         if len(already_booked) == 0:
             available_appt.loc[index] = row.values
             index = index + 1
+            available_time = available_appt[['stylist', 'time slot']]
     # if there are any free time slots for selected day
     if len(available_appt) > 0:
         print(f"\n We have availability on {day_selected.capitalize()}, {user_date_str}!\n")  # noqa:E501
         print("\n Please call us to book an appointment: \n")
+        print(available_time)
     # if there are no free time slots for selected day
     else:
         print(f"\nUnfortunately we do not have any availability on {day_selected.capitalize()} {user_date_str}!\n")  # noqa:E501
