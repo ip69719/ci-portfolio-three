@@ -2,7 +2,7 @@
 import sys  # used for allowing user to exit the program
 from datetime import datetime, date, timedelta  # required to manipulate dates
 import re # required for email address validation
-from tabulate import tabulate # 
+from tabulate import tabulate  # used to display the pandas df in a table style
 
 # makes sheets dataobjects that are easier to search/manipulate
 import pandas as pd
