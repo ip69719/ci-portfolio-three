@@ -16,13 +16,20 @@ Staff at Elegant Hairstyles spend less time taking bookings over the phone becau
 
 ### Existing Features
 
+* **Welcome message**
+    * Users are greeted with a welcome message which includes a brief description of the app.
+    * Users are presented with simple instructions to choosed from.
+    ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/welcome.png)
+
 * Login
     * Users will be required to enter their email and password to use the app.
     * New users have an option to register.
+    ![]()
 
 * Register
     * Users will be required to register to use the app.
     * Already registered users can login with their credentials.
+    ![]()
 
 * Print Future Appointments
     * All the upcoming appointments associated with the authenticated user are displayed upon successful login.
