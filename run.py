@@ -89,7 +89,9 @@ def enter_email():
     regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
     new_user_email = input("\nPlease enter your email: \n")
     while not re.fullmatch(regex, new_user_email):
-        print("Plese enter a valid email address")
+        print("\nPlease enter a valid email address.\n")
+        print("Email address must have the following pattern:\n")
+        print("username + @ symbol + domain name. Example: name@example.com\n")
         new_user_email = input("\nPlease enter your email: \n")
 
     return new_user_email
