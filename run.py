@@ -318,13 +318,11 @@ def free_appt():
     bookings_all = pd.DataFrame(bookings.get_all_records())
     # limit data to date selected by user
     current_bookings = bookings_all.loc[bookings_all['date'] == date_selected]
-    print(current_bookings)
 
     # get data from schedule spreadsheet
     schedule_all = pd.DataFrame(schedule.get_all_records())
     # limit it to the rows where the day of week column ==“open”
     current_schedule = schedule_all.loc[schedule_all[day_selected] == 'open']
-    print(current_schedule)
 
     # create an empty pandas DataFrame
     available_appt = pd.DataFrame(
