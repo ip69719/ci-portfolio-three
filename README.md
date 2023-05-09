@@ -81,7 +81,7 @@ Staff at Elegant Hairstyles spend less time taking bookings over the phone becau
 
 * CI Python Linter was used to validate the code.
     * CI Python Linter - [Results](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/ci_python_linter_results.png): All clear, no errors found.
-    * Line too long warnings were ignored because I wanted to center the logo and welcome text on mock terminal on Heroku.
+    * Line too long warnings were ignored because I wanted to center the logo and welcome text on mock terminal on Heroku. In addition, splitting some lines of code resulted in syntax errors. I commented these lines with # noqa:E501 to indicate that the linter should not check these lines.
 
 ### Manual Testing
 
