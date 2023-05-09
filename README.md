@@ -106,7 +106,7 @@ The project was deployed to Heroku using the following steps:
 
 ### Code
 
-* Lerned how to connect the API to my spreadsheet, update spreadhseet and deploy the app from Code Institute Love Sandwiches Walkthrough Project.
+* Learned how to connect the API to my spreadsheet, update spreadhseet and deploy the app from Code Institute Love Sandwiches Walkthrough Project.
 * Learned about Python exit command from [this](https://pythonguides.com/python-exit-command/#:~:text=In%20python%2C%20we%20have%20an%20in-built%20quit%20%28%29,function%20should%20only%20be%20used%20in%20the%20interpreter.) python tutorial.
 * Learned about Python datetime module from [this](https://www.geeksforgeeks.org/formatting-dates-in-python/) GeeksforGeeks tutorial.
 * Learned how to read Google Sheets data using Python from [this](https://medium.com/geekculture/2-easy-ways-to-read-google-sheets-data-using-python-9e7ef366c775) article written by BK Lin.
