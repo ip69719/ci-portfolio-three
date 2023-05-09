@@ -118,6 +118,11 @@ def get_username():
 
 
 def get_password():
+    """
+    Function checks that password meets password requirements
+    specified in validate password function and repeats the request
+    until a valid password is provided.
+    """
     while True:
         print("\nPlease enter a password that is at least 8 characters long and contains at least 1 digit and 1 uppercase character.\n")
         password = input("\nPlease enter password: \n")
