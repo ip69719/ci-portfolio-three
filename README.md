@@ -63,6 +63,13 @@ Staff at Elegant Hairstyles spend less time taking bookings over the phone becau
         * Password that meets the requirements is accepted and the registration process is complete.
         ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/valid_password_reg.png)
 
+    * **Date validation**
+        * User input for Date is checked to ensure it matches the expected format and that the date is a future date.
+        * If User enters a date which does not meet the requirement then the request for data is repeated until a valid date is provided.
+        ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/invalid%20date.png)
+        * If date input is valid then user is presented with available appointments for the date selected.
+        ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/valid_date.png)
+
 ### Features Left to Implement
 
 * Create booking feature was not complete due to time constrains. It will be included in the future release. Code associated with this feature was removed.
