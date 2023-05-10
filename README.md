@@ -18,7 +18,7 @@ Staff at Elegant Hairstyles spend less time taking bookings over the phone becau
 
 * **Welcome message**
     * Users are greeted with a welcome message which includes a brief description of the app.
-    * Users are presented with simple instructions to choosed from.
+    * Users are presented with simple instructions to choose from.
     ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/welcome.png)
 
 * **Login**
