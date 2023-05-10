@@ -35,6 +35,10 @@ Staff at Elegant Hairstyles spend less time taking bookings over the phone becau
     * All the upcoming appointments associated with the authenticated user are displayed upon successful login.
     ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/future_appt.png)  
 
+* **Available Appointments**
+    * Authenticated users can check if any appointments are available on selected date.
+    ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/available_appt.png)  
+
 * Input validation
     * **Email validation**
         * User input for email address is validated against the following pattern: username + @ symbol + domain name.
