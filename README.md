@@ -21,18 +21,19 @@ Staff at Elegant Hairstyles spend less time taking bookings over the phone becau
     * Users are presented with simple instructions to choosed from.
     ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/welcome.png)
 
-* Login
+* **Login**
     * Users will be required to enter their email and password to use the app.
     * New users have an option to register.
     ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/login.png)
 
-* Register
+* **Register**
     * Users will be required to register to use the app.
     * Already registered users can login with their credentials.
     ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/register.png)
 
-* Print Future Appointments
+* **Print Future Appointments**
     * All the upcoming appointments associated with the authenticated user are displayed upon successful login.
+    ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/future_appt.png)  
 
 * Input validation
     * **Email validation**
