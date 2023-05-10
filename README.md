@@ -72,9 +72,9 @@ Staff at Elegant Hairstyles spend less time taking bookings over the phone becau
 
 ### Features Left to Implement
 
-* Create booking feature was not complete due to time constrains. It will be included in the future release. Code associated with this feature was removed.
+* Create booking feature was not complete due to time constrains. It will be included in the future release.
 * Hide password, so it is not visible when typed in the terminal.
-* Reset password.
+* Allow users to reset password via application instead of calling the hairdressers.
 * Allow stylists check upcoming appointments and client's details via app.
 
 ## Technologies used
