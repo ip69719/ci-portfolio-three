@@ -30,6 +30,7 @@ Staff at Elegant Hairstyles spend less time taking bookings over the phone becau
     * Users will be required to register to use the app.
     * Already registered users can login with their credentials.
     ![](https://github.com/ip69719/ci-portfolio-three/blob/main/docs/images/register.png)
+    * New user details are added to the [Users](https://docs.google.com/spreadsheets/d/1JK7nrAsio11eWGhl_KE0F8422WZe4lMaXBRTk9-KNjc/edit#gid=32414724) google worksheet.
 
 * **Print Future Appointments**
     * All the upcoming appointments associated with the authenticated user are displayed upon successful login.
