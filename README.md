@@ -109,6 +109,7 @@ Staff at Elegant Hairstyles spend less time taking bookings over the phone becau
 
 ### Manual Testing
 
+* Test cases are recorded in [this](https://docs.google.com/spreadsheets/d/1qU2jid0vbYUYpUHYSIkKlxukydcZFL5mdR-51esS82A/edit?usp=sharing) shared google workbook.
 * Confirmed that User can only enter a valid answer option from the list of available options.
 * Confirmed that if invalid answer option is selected, then request for valid input repeated.
 * Confirmed that only date provided in expected format (YYYY-MM-DD) is accepted.
