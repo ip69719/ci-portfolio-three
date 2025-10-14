@@ -1,0 +1,19 @@
+tasks:
+    command-0:
+        command: /home/gitpod/.pg_ctl/bin/pg_start > /dev/null
+        dependsOn:
+            - init-000
+        description: init task migrated from .gitpod.yml
+        name: 'Task 0: command'
+        triggeredBy:
+            - postDevcontainerStart
+    command-1:
+        command: . ${GITPOD_REPO_ROOT}/.vscode/uptime.sh &
+        description: init task migrated from .gitpod.yml
+        name: 'Task 1: command'
+        triggeredBy:
+            - postDevcontainerStart
+    init-000:
+        command: . ${GITPOD_REPO_ROOT}/.vscode/init_tasks.sh
+        description: init task migrated from .gitpod.yml
+        name: 'Task 0: init'
